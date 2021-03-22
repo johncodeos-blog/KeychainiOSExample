@@ -1,5 +1,5 @@
 //
-//  SearchItemViewController.swift
+//  RetrieveItemViewController.swift
 //  KeychainiOSExample
 //
 //  Created by John Codeos on 3/20/21.
@@ -8,7 +8,7 @@
 import Security
 import UIKit
 
-class SearchItemViewController: UIViewController {
+class RetrieveItemViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var resultsStackView: UIStackView!
     @IBOutlet var resultsLabel: UILabel!

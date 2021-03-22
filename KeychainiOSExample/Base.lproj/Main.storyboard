@@ -158,29 +158,15 @@
                                             <constraint firstAttribute="height" constant="50" id="gYK-90-IeX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <state key="normal" title="Search Item">
+                                        <state key="normal" title="Retrieve Item">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="BWO-aR-Pfc" kind="show" id="Yah-7w-miB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQr-J8-Q6Q">
-                                        <rect key="frame" x="0.0" y="120" width="120" height="50"/>
-                                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="BIB-fp-Lsh"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                        <state key="normal" title="Update Item">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="2KX-2Q-eJ8" kind="show" id="1Xf-wN-lob"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAZ-eb-zpm">
-                                        <rect key="frame" x="0.0" y="180" width="120" height="50"/>
+                                        <rect key="frame" x="0.0" y="120" width="120" height="50"/>
                                         <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ixg-yo-E2x"/>
@@ -191,6 +177,20 @@
                                         </state>
                                         <connections>
                                             <segue destination="OBb-vO-cfr" kind="show" id="5pA-lK-FXe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQr-J8-Q6Q">
+                                        <rect key="frame" x="0.0" y="180" width="120" height="50"/>
+                                        <color key="backgroundColor" red="0.61960784310000006" green="0.10980392160000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="BIB-fp-Lsh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Update Item">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="2KX-2Q-eJ8" kind="show" id="1Xf-wN-lob"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -354,10 +354,10 @@
             </objects>
             <point key="canvasLocation" x="1341" y="938"/>
         </scene>
-        <!--Search Item-->
+        <!--Retrieve Item-->
         <scene sceneID="z6S-IK-lsA">
             <objects>
-                <viewController id="BWO-aR-Pfc" customClass="SearchItemViewController" customModule="KeychainiOSExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BWO-aR-Pfc" customClass="RetrieveItemViewController" customModule="KeychainiOSExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l4Z-a0-HqC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,7 +484,7 @@
                             <constraint firstItem="3xZ-AS-wCe" firstAttribute="centerX" secondItem="lmx-wa-gT0" secondAttribute="centerX" id="kgY-fb-kAF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Search Item" id="LZR-Sr-6tc"/>
+                    <navigationItem key="navigationItem" title="Retrieve Item" id="LZR-Sr-6tc"/>
                     <connections>
                         <outlet property="resultsLabel" destination="kXa-Vj-Q8I" id="sqt-Za-udy"/>
                         <outlet property="resultsPasswordLabel" destination="6S4-6h-KA6" id="mni-W4-u3X"/>
